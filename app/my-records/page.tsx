@@ -1,3 +1,4 @@
+import { recommendMocks } from "@/data/records"
 import { BodyRecord } from "./components/body-record"
 import { MyDiary } from "./components/my-diary"
 import { MyExercise } from "./components/my-exercise"
@@ -7,21 +8,14 @@ export default function MyRecordPage() {
   return (
     <div className="container">
       <div className="grid grid-cols-3 gap-x-12 mt-14" id="recommend">
-        <Recommend
-          title="BODY RECORD"
-          text="自分のカラダの記録"
-          backgroundImage="/images/MyRecommend-1.jpg"
-        />
-        <Recommend
-          title="MY EXERCISE"
-          text="自分の運動の記録"
-          backgroundImage="/images/MyRecommend-2.jpg"
-        />
-        <Recommend
-          title="MY DIARY"
-          text="自分の日記"
-          backgroundImage="/images/MyRecommend-3.jpg"
-        />
+        {recommendMocks.map((item) => (
+          <Recommend
+            key={item.title}
+            title={item.title}
+            text={item.text}
+            backgroundImage={item.img}
+          />
+        ))}
       </div>
       <div className="mt-14 ">
         <BodyRecord />

@@ -1,90 +1,4 @@
-const exercise = [
-  {
-    id: 1,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 2,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 3,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 4,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 5,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-
-  {
-    id: 6,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 7,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 8,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 9,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 10,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 11,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 12,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 13,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-  {
-    id: 14,
-    name: "家事全般（立位・軽い)",
-    kcal: "26kcal",
-    time: "10 min",
-  },
-]
+import { exercisesMock } from "@/data/records"
 
 export function MyExercise() {
   return (
@@ -97,7 +11,7 @@ export function MyExercise() {
         <p className="font-inter text-[22px] leading-[27px]">2021.05.21</p>
       </div>
       <div className="overflow-auto grid grid-cols-2 gap-x-10 gap-y-2 h-[12rem] custom-scrollbar pr-6">
-        {exercise.map((item) => {
+        {exercisesMock.map((item) => {
           return (
             <div
               key={item.id}

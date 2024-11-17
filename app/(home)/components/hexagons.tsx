@@ -1,3 +1,4 @@
+import { mealsMock } from "@/data/meals"
 import Image from "next/image"
 
 const HexagonContent = ({
@@ -27,10 +28,9 @@ export function HexagonSection() {
       id="hexagon-buttons"
       className="container flex items-center justify-evenly py-6"
     >
-      <HexagonContent text="Morning" icon="/icons/icon_knife.svg" />
-      <HexagonContent text="Lunch" icon="/icons/icon_knife.svg" />
-      <HexagonContent text="Dinner" icon="/icons/icon_knife.svg" />
-      <HexagonContent text="Snack" icon="/icons/icon_cup.svg" />
+      {mealsMock.map((item) => (
+        <HexagonContent key={item.text} text={item.text} icon={item.icon} />
+      ))}
     </section>
   )
 }
