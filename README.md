@@ -1,7 +1,3 @@
-Got it! Here's an updated version of the README indicating that you didn't manage to solve the issue yet:
-
----
-
 # Health Care Site Test
 
 This project is a **Next.js** application designed to showcase a basic health care website with some test features. The application utilizes **TypeScript** and **Tailwind CSS** for styling, providing a clean and responsive design.
